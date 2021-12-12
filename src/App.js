@@ -1,9 +1,13 @@
 import './App.css';
+import { Routes, Route } from 'react-router';
+import AllMeetups from './pages/AllMeetups';
 
 function App() {
   return (
     <div>
-      <p>oh shit, here we go again</p>
+      <Routes>
+        <Route path='/' element={<AllMeetups/>} />
+      </Routes>
     </div>
   );
 }

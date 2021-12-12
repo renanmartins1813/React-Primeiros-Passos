@@ -1,6 +1,6 @@
 import React from "react";
-import Modal_test from "./Modal_test";
-import Backdrop_test from "./Backdrop_test";
+import Modal_test from './Modal_test';
+import Backdrop_test from './Backdrop_test';
 import { useState } from "react";
 
 export default function Test(props) {

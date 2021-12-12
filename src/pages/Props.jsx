@@ -1,6 +1,7 @@
 import React from "react";
 import Test from "../components/Test";
-export default function Props(props) {
+
+export default function Props() {
   return (
     <div>
       <h1>Propando mlk</h1>

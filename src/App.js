@@ -2,7 +2,6 @@ import './App.css';
 import { Routes, Route } from 'react-router';
 import AllMeetups from './pages/AllMeetups';
 import Props from './pages/Props';
-import Test from './components/Test';
 
 function App() {
   return (

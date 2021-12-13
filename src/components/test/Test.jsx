@@ -1,6 +1,6 @@
 import React from "react";
-import Modal_test from './Modal_test';
-import Backdrop_test from './Backdrop_test';
+import ModalTest from './ModalTest';
+import BackdropTest from './BackdropTest';
 import { useState } from "react";
 
 export default function Test(props) {
@@ -21,8 +21,8 @@ export default function Test(props) {
                 <button className='btn' onClick={deleteHandler}>Propando</button>
             </div>
 
-            {modalIsOpen && <Modal_test onCancel={closeModalHandler} onConfirm={closeModalHandler}/>}
-            {modalIsOpen && <Backdrop_test onClick={closeModalHandler} /> }
+            {modalIsOpen && <ModalTest onCancel={closeModalHandler} onConfirm={closeModalHandler}/>}
+            {modalIsOpen && <BackdropTest onClick={closeModalHandler} /> }
         </div>
     );
 }

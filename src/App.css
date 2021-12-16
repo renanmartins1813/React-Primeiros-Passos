@@ -1,12 +1,21 @@
 *,
 *::before,
+<<<<<<< HEAD
 *::after{
+=======
+*::after {
+>>>>>>> tmp
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 html,body{
+=======
+html,
+body {
+>>>>>>> tmp
     width: 100%;
     height: 100%;
 }

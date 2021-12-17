@@ -2,6 +2,7 @@ import React from "react";
 import ModalTest from './ModalTest';
 import BackdropTest from './BackdropTest';
 import { useState } from "react";
+import classes from './style.module.css'
 
 export default function Test(props) {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -15,10 +16,10 @@ export default function Test(props) {
     }
 
     return (
-        <div className="card">
+        <div className={classes.card}>
             <h2>{props.text}</h2>
-            <div className="actions">
-                <button className='btn' onClick={deleteHandler}>Propando</button>
+            <div className={classes.actions}>
+                <button className={classes.btn} onClick={deleteHandler}>Propando</button>
             </div>
 
             {modalIsOpen && <ModalTest onCancel={closeModalHandler} onConfirm={closeModalHandler}/>}

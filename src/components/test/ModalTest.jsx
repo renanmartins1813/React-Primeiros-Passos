@@ -1,4 +1,5 @@
 import React from 'react'
+import classes from './style.module.css'
 
 export default function Modal_test(props) {
     function cancelHandler(){
@@ -9,10 +10,10 @@ export default function Modal_test(props) {
     }
     
     return (
-        <div className='modal'>
+        <div className={classes.modal}>
             <p>Are U sure, bro?!</p>
-            <button className='btn btn--alt' onClick={cancelHandler}>I'm afraid I am not</button>
-            <button className='btn' onClick={confirmHandler}>Confirm</button>
+            <button className={`${classes.btn} ${classes.btnAlt}`} onClick={cancelHandler}>I'm afraid I am not</button>
+            <button className={`${classes.btn}`} onClick={confirmHandler}>Confirm</button>
         </div>
     );
 }
